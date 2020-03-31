@@ -14,7 +14,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -82,6 +82,7 @@ dependencies {
 
     // Kodein
     implementation "org.kodein.di:kodein-di-generic-jvm:$kodein_version"
+    implementation "org.kodein.di:kodein-di-framework-android-x:$kodein_version"
 
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
@@ -110,4 +111,6 @@ dependencies {
 
     // Location
     implementation "com.google.android.gms:play-services-location:$location_version"
+
+    implementation 'com.android.support:multidex:1.0.3'
 }

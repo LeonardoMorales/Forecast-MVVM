@@ -6,5 +6,5 @@ import com.leonardo.forecastmvvm.data.api.network_responses.CurrentWeatherRespon
 interface WeatherNetworkDataSource {
     val downloadCurrentWeather: LiveData<CurrentWeatherResponse>
 
-    suspend fun fetchCurrentWeather(location: String)
+    suspend fun fetchCurrentWeather(location: String, unit: String)
 }
